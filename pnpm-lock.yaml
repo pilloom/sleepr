@@ -59,6 +59,9 @@ dependencies:
   nestjs-pino:
     specifier: ^3.5.0
     version: 3.5.0(@nestjs/common@10.2.6)(pino-http@8.5.0)
+  nodemailer:
+    specifier: ^6.9.6
+    version: 6.9.6
   passport:
     specifier: ^0.6.0
     version: 0.6.0
@@ -109,6 +112,9 @@ devDependencies:
   '@types/node':
     specifier: ^20.3.1
     version: 20.8.2
+  '@types/nodemailer':
+    specifier: ^6.4.11
+    version: 6.4.11
   '@types/passport-jwt':
     specifier: ^3.0.10
     version: 3.0.10
@@ -1445,6 +1451,12 @@ packages:
 
   /@types/node@20.8.2:
     resolution: {integrity: sha512-Vvycsc9FQdwhxE3y3DzeIxuEJbWGDsnrxvMADzTDF/lcdR9/K+AQIeAghTQsHtotg/q0j3WEOYS/jQgSdWue3w==}
+
+  /@types/nodemailer@6.4.11:
+    resolution: {integrity: sha512-Ld2c0frwpGT4VseuoeboCXQ7UJIkK3X7Lx/4YsZEiUHtHsthWAOCYtf6PAiLhMtfwV0cWJRabLBS3+LD8x6Nrw==}
+    dependencies:
+      '@types/node': 20.8.2
+    dev: true
 
   /@types/parse-json@4.0.0:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
@@ -4541,6 +4553,11 @@ packages:
   /node-releases@2.0.13:
     resolution: {integrity: sha512-uYr7J37ae/ORWdZeQ1xxMJe3NtdmqMC/JZK+geofDrkLUApKRHPd18/TxtBOJ4A0/+uUIliorNrfYV6s1b02eQ==}
     dev: true
+
+  /nodemailer@6.9.6:
+    resolution: {integrity: sha512-s7pDtWwe5fLMkQUhw8TkWB/wnZ7SRdd9HRZslq/s24hlZvBP3j32N/ETLmnqTpmj4xoBZL9fOWyCIZ7r2HORHg==}
+    engines: {node: '>=6.0.0'}
+    dev: false
 
   /normalize-path@3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
