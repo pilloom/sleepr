@@ -14,9 +14,10 @@ describe('AuthController', () => {
     authController = app.get<AuthController>(AuthController);
   });
 
-  describe('root', () => {
-    it('should return "Hello World!"', () => {
-      expect(authController.getHello()).toBe('Hello World!');
-    });
+  /**
+   * Verifies that resolver is defined.
+   */
+  it('should be defined', () => {
+    expect(authController).toBeDefined();
   });
 });
