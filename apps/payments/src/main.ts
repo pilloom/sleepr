@@ -7,7 +7,6 @@ import { Logger } from 'nestjs-pino';
 async function bootstrap() {
   const app = await NestFactory.create(PaymentsModule);
   const configService = app.get(ConfigService);
-  console.log('Test');
   app.connectMicroservice({
     transport: Transport.TCP,
     options: {
