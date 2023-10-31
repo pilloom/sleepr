@@ -15,7 +15,8 @@ spec:
         app: notifications
     spec:
       containers:
-        - image: us-east4-docker.pkg.dev/sleepr-402417/notifications/production
+        # - image: us-east4-docker.pkg.dev/sleepr-402417/notifications/production
+        - image: 503240354556.dkr.ecr.us-east-2.amazonaws.com/notifications:latest
           name: production
           env:
             - name: PORT
